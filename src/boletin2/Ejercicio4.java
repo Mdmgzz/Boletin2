@@ -9,10 +9,13 @@ public class Ejercicio4 {
 		String primera,segunda;					// se guardaran el valor obtenido dsp de la tirada 
 		// creamos scanner y preguntadmos
 		Scanner sc=new Scanner (System.in);
+		
 		System.out.println("Introduzca el valor obtenido en la 1º (Con letras): ");
 		primera=sc.next();
+		
 		System.out.println("Introduzca el valor obtenido en la 2º( Con letras): ");
 		segunda=sc.next();
+		
 		int num1 = switch (primera){			// aqui se guardaran los numeros obtenidos en la tirada
 		case "UNO"->{
 			yield 1;	//corresponde con el numero 1
@@ -37,6 +40,7 @@ public class Ejercicio4 {
 			yield -1;
 		}
 		};
+		
 		int num2 = switch (segunda){			// aqui se guardaran los numeros obtenidos en la tirada
 		case "UNO"->{
 			yield 1;	//corresponde con el numero 1
